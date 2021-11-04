@@ -2,8 +2,8 @@ from maya import cmds
 
 #you can modify the range, name before and name after
 
-rangeBeagin=0   #change the zero into the number that you want to start rename
-rangeEnd=0  #change the zero into the number that you want to end rename
+rangeBegin=0   #change the zero into the number that you want to start rename
+rangeEnd=0  #change the zero into the number that you want to end rename 
 
 oldName='pCube'
 newName='renamedObject'
@@ -14,5 +14,5 @@ newName='renamedObject'
 #and enter the name you want to rename to your object
 #keep everything in the ''
 
-for i in range(rangeBeagin,rangeEnd+1):
+for i in range(rangeBegin,rangeEnd+1):
     cmds.rename('oldName%s'%(i),'newName%s'%(i))
